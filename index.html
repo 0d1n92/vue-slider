@@ -13,14 +13,14 @@
     <div id="app">
       <div id="wrapper">
         <div id="prev" >
-          <i class="fas fa-chevron-left" @click="prevImg"></i>
+          <i class="fas fa-chevron-left" @click="prevImgClick"></i>
         </div>
         <div id="sliders">
           <img :src="images[imageIndex].imageUrl" :alt="images[imageIndex].altText">
 
         </div>
         <div id="next">
-          <i  class="fas fa-chevron-right"  @click="nextImg"></i>
+          <i  class="fas fa-chevron-right"  @click=" nextImgClick"></i>
         </div>
         <div id="dots">
           <i v-for="(element,index) in images" @click="imageIndex=index" :class="(index==imageIndex)?'fas':'far'"  class="fa-circle"></i>

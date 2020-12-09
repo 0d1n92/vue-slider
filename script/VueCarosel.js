@@ -22,9 +22,28 @@ var app= new Vue ({
         altText:"SurfLeader",
       },
     ],
+    TimeAutoplay:"",
   },
+  created: function () {
+    console.log("test");
+    this.TimeAutoplay= setInterval(() =>{
+     this.nextImg();
+   },1000
+  );
+},
+
   methods: {
+    prevImgClick: function() {
+      clearInterval(this.TimeAutoplay);
+      this.prevImg();
+    },
+    nextImgClick: function () {
+      clearInterval(this.TimeAutoplay);
+      this.nextImg();
+    },
+
     prevImg: function() {
+
       this.imageIndex--;
       if (this.imageIndex==-1) {
         this.imageIndex= this.images.length-1;
