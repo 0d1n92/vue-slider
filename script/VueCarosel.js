@@ -36,8 +36,6 @@ var app= new Vue ({
           console.log(this.imageIndex);
         if (this.imageIndex==this.images.length-1) {
           this.imageIndex= 0;
-
-
         }
       },
   },
