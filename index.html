@@ -23,7 +23,7 @@
           <i  class="fas fa-chevron-right"  @click="nextImg"></i>
         </div>
         <div id="dots">
-          <i v-for="(element,index) in images"  :class="(index==imageIndex)?'fas':'far'"  class="fa-circle"></i>
+          <i v-for="(element,index) in images" @click="imageIndex=index" :class="(index==imageIndex)?'fas':'far'"  class="fa-circle"></i>
         </div>
       </div>
 

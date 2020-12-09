@@ -28,7 +28,6 @@ var app= new Vue ({
       this.imageIndex--;
       if (this.imageIndex==-1) {
         this.imageIndex= this.images.length-1;
-
       }
     },
     nextImg: function() {
@@ -37,5 +36,6 @@ var app= new Vue ({
         this.imageIndex= 0;
       }
     },
-},
+
+  },
 });
