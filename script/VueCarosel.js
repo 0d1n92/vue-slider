@@ -23,20 +23,19 @@ var app= new Vue ({
       },
     ],
   },
-    methods: {
-      prevImg: function() {
-        this.imageIndex--;
-        if (this.imageIndex==-1) {
-          this.imageIndex= this.images.length-1;
+  methods: {
+    prevImg: function() {
+      this.imageIndex--;
+      if (this.imageIndex==-1) {
+        this.imageIndex= this.images.length-1;
 
-        }
-      },
-      nextImg: function() {
-        this.imageIndex++;
-          console.log(this.imageIndex);
-        if (this.imageIndex==this.images.length-1) {
-          this.imageIndex= 0;
-        }
-      },
-  },
+      }
+    },
+    nextImg: function() {
+      this.imageIndex++;
+      if (this.imageIndex==this.images.length-1) {
+        this.imageIndex= 0;
+      }
+    },
+},
 });
