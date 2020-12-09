@@ -51,7 +51,7 @@ var app= new Vue ({
     },
     nextImg: function() {
       this.imageIndex++;
-      if (this.imageIndex==this.images.length-1) {
+      if (this.imageIndex==this.images.length) {
         this.imageIndex= 0;
       }
     },
